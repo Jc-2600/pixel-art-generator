@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    background-color: #024059;
+}
+
+.wrapper{
+    background-color: white;
+    width: 80vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.205);
+}
+
+label{
+    display: block;
+}
+
+span{
+    position: relative;
+    font-size: 20px;
+    bottom: -1px;
+}
+
+.opt-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+button{
+    background-color: #FF4858;
+    color: white;
+    border: solid 1px white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: white;
+    color: #FF4858;
+    border: solid 1px #FF4858;
+}
+
+input[type="color"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 70px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swacht{
+    border-radius: 20px;
+    border: 4px solid black;
+}
+
+input[type="color"]::-moz-color-swacht {
+    border-radius: 20px;
+    border: 4px solid black;
+}
+
+.gridCol{
+    height: 1em;
+    width: 1em;
+    border: 1px solid #ddd;
+}
+
+.gridRow{
+    display: flex;
+}
+
+
+@media only screen and (max-width: 768px){
+    .gridCol{
+         height: 0.8em;
+         width: 0.8em;
+    }
+}
